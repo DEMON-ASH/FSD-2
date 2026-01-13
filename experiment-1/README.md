@@ -1,8 +1,3 @@
-Gotcha 👍
-Here’s a **clean, modified version** of that README with **better headings, bold highlights, improved wording**, and **small structural differences** so it doesn’t look copy-pasted, but still stays correct and professional.
-
----
-
 # 🚀 React + Vite Project
 
 This project is developed using **React** with **Vite** as the build tool.
