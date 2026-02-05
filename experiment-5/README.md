@@ -1,16 +1,32 @@
-# React + Vite
+## Learning Outcomes
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+1. Understand lazy loading and its role in frontend performance optimization
+2. Implement lazy loading in React using `React.lazy()` and `Suspense`
+3. Apply lazy loading to route-based components with `react-router-dom`
+4. Optimize initial bundle size to improve application load time
+5. Organize a scalable React project structure for better performance
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## What is Lazy Loading?
 
-## React Compiler
+Lazy loading is a performance optimization technique where components are **loaded only when needed**, instead of loading the entire application upfront.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+In React, lazy loading helps to:
 
-## Expanding the ESLint configuration
+* Minimize the initial bundle size
+* Speed up the first page load
+* Improve user experience in large applications
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+React supports lazy loading using:
+
+* `React.lazy()`
+* `Suspense`
+
+---
+
+## How Lazy Loading Works in React
+
+* Components are split into separate bundles
+* Bundles are loaded **only when the component or route is accessed**
+* A fallback UI (such as a loader or placeholder) is displayed during loading.
