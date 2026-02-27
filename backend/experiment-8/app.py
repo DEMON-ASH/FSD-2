@@ -1,5 +1,5 @@
 from flask import Flask
-# from routes.student_routes import student_bp
+from routes.student_routes import student_bp
 # from middleware.logger import register_middlewares
 
 def create_app():
